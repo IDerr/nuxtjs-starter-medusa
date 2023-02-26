@@ -3,6 +3,13 @@ export default defineNuxtConfig({
     ssr: false,
     modules: [
         '@nuxtjs/tailwindcss',
-        '@pinia/nuxt'
-    ]
+        '@pinia/nuxt',
+        '@nuxt/image-edge',
+    ],
+    components: [
+        {
+        path: '~/components',
+        pathPrefix: false,
+        },
+    ],  
 })
